@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "wrightfunk";
+    src: local('Wright Funk Extra Bold'),local('Wright-Funk-Extra-Bold')
+    url('WrightFunk-ExtraBold.woff2') format('woff2'),
+    url('WrightFunk-ExtraBold.woff') format('woff'),
+    url('WrightFunk-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
 *{
     padding: 0;
     margin: 0;
@@ -216,6 +225,57 @@ h5{
     transition: .4s;
 }
 .carta .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.contactame{
+    width: 100%;
+    height: 900px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactame form button,
+.contactame form input,
+.contactame form textarea{
+width: 100%;
+padding: .7em;
+border: none;
+background: none;
+outline: 0;
+color: #fcfcfc;
+border-bottom: 1px solid #f9004d;
+ }
+.contactame form {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.contactame form .block{
+    grid-column: 1 / 3;
+}
+
+ .contactame p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    
+}
+.contactame .boton-dos {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contactame .boton-dos:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
